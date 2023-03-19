@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+}
+#screen{
+    width:100%;
+    /* border:3px solid red; */
+    height:80px;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    box-shadow: 5px 10px 18px #fbf9f9;
+}
+#screen > div:nth-child(1) {
+    width:10%;
+    height:60px;
+    /* border:2px solid black; */
+}
+#screen > div:nth-child(1) >img {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 40px;
+    padding-left: 40px;
+    /* padding-top: 10px; */
+    color: mediumvioletred;
+    font-family: 'Josefin Sans', sans-serif;
+    height:60px;
+    width:80px;
+}
+#screen > div:nth-child(2) {
+    width:45%;
+    height:60px;
+    /* border: 2px solid black; */
+}
+#screen-tags {
+    width:30%;
+    height:60px;
+    display:flex;
+    justify-content:space-around;
+    /* justify-content: center; */
+    font-size: 15px;
+}
+#screen-tags > div >h3{
+    text-align: center;
+    padding-top: 20px;
+    font-size:15px;
+}
+#screen > div:nth-child(3) {
+    width: 30%;
+    height: 60px;
+    padding-right: 30px;
+    /* border:2px solid black; */
+}
+#screen-search{
+    display: flex;
+}
+/* #screen-search >form>button> i{
+
+} */
+#screen-search >form>button {
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+#screen-search > form{
+    display:flex;
+  
+    border-radius:10px;
+    background-color: rgb(241, 238, 238);
+    width:80%;
+    height:30px;
+    padding:5px;
+    width:90%;
+    margin-top: 15px;
+    padding-right: 50px;
+}
+#screen-search > form>input{
+    border:none;
+    background-color: rgb(241, 238, 238);
+    padding-left: 10px;
+    width:100%;
+
+   
+}
+#screen > div:nth-child(4) {
+    width:15%;
+    height:60px;
+   
+    
+    padding-right: 20px;
+    /* border:2px solid black; */
+}
+#screen-right-tags {
+    display:flex;
+    justify-content: space-around;
+}
+#screen-right-tags> div{
+    padding-top:15px;
+    
+}
+#screen-right-tags> div >i{
+    padding-left: 10px;
+    align-items: center;
+}
+#screen-right-tags> div >h4 {
+    margin-top: 5px;
+    /* text-align: center; */
+}
