@@ -1,6 +1,10 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+}
+#mainscreen >div{
+    margin-bottom: 50px;
 }
 #screen{
     width:100%;
@@ -106,4 +110,103 @@
 #screen-right-tags> div >h4 {
     margin-top: 5px;
     /* text-align: center; */
+}
+#slider{
+    width:100%;
+    height:500px;
+    margin-top: 20px;
+}
+#slider >img{
+    width:100%;
+    height:100%;
+}
+.dealhead{
+    height:50px;
+    width:95%;
+    margin:auto;
+}
+.dealhead >h1{
+    letter-spacing: 5px;
+    color: rgb(43, 41, 41);
+}
+#bestinfomain{
+    height:660px;
+    width:100%;
+    /* border:1px solid red; */
+}
+#dealinfo{
+    height:370px;
+    width:100%;
+    display: flex;
+}
+#dealinfo >div{
+    height:100%;
+    width:15%;
+}
+#dealinfo >div >img{
+    height:100%;
+    width:100%;
+}
+#bestinfo{
+    height:330px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#bestinfo > div{
+ width:12%;
+ height:100%;
+}
+#bestinfo > div >img{
+    width:100%;
+    height:100%;
+   }
+#toppicksinfo{
+    height:350px;
+    width:100%;
+    /* border:1px solid red; */
+    display: flex;
+}
+#toppicksinfo >div{
+    width:15%;
+    height:100%;
+}
+#toppicksinfo >div >img{
+    height:100%;
+    width:100%;
+}
+#baginfo{
+    width:100%;
+    height:310px;
+    /* border:1px solid red; */
+    display: flex;
+}
+#baginfo >div{
+    width:25%;
+    height:100%;
+}
+#baginfo >div >img{
+    height:100%;
+    width:100%;
+}
+#baginfo2{
+    margin-top:-50px;
+    width:100%;
+    height:310px;
+    /* border:1px solid red; */
+    display: flex;
+}
+#baginfo2 >div{
+    width:25%;
+    height:100%;
+}
+#baginfo2 >div >img{
+    height:100%;
+    width:100%;
+}
+#brandinfo{
+    height:400px;
+    width:100%;
+    border:1px solid red;
 }
