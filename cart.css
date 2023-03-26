@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#mainscreen{
+    width:100%;
+    height:1200px;
+    border:1px solid red;
+}
+#navbar{
+    width:100%;
+    height:100px;
+    border-bottom:1px solid rgb(218, 214, 214);
+    display: flex;
+}
+#navbar > div{
+    width:33.3%;
+    height:100%;
+    /* border:1px solid green; */
+}
+#navbar > div:nth-child(1) > img{
+    height:80%;
+    width:18%;
+    /* border:1px solid blue; */
+    margin-left: 70px;
+    margin-top: 12px;
+}
+#navbar > div:nth-child(2){
+    display: flex;
+    padding-left: 140px;
+    padding-top: 40px;
+}
+#navbar > div:nth-child(2) >div:nth-child(1) > p{
+    color:rgb(55,192,155);
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+#navbar > div:nth-child(2) >div:nth-child(2){
+    width:80px;
+    height:10px;
+    /* border-bottom:2px dashed black; */
+    margin-left: 5px;
+}
+#navbar > div:nth-child(2) >div:nth-child(3) > p{
+    /* color:rgb(55,192,155); */
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+#navbar > div:nth-child(2) >div:nth-child(4){
+    width:80px;
+    height:10px;
+    border-bottom:2px dashed black;
+    margin-left: 5px;
+}
+#navbar > div:nth-child(2) >div:nth-child(5) > p{
+    /* color:rgb(55,192,155); */
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+#navbar > div:nth-child(3)>div{
+    display: flex;
+    /* border:1px solid black; */
+    width:30%;
+    height:40%;
+    margin-left: 400px;
+    margin-top: 25px;
+}
+#navbar > div:nth-child(3)> div >img{
+    height:100%;
+    width:20%;
+    /* border:1px solid black; */
+}
+#navbar > div:nth-child(3) > div >p{
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+#cartbody{
+    width:60%;
+    border:1px solid red;
+    margin: auto;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+}
+#cartleft{
+    width:62.5%;
+    height:100%;
+    border:1px solid black;
+    
+}
+#cartleft > div:nth-child(1){
+    height:80px;
+    width:100%;
+    border:1px solid rgb(192, 190, 190);
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 10px;
+}
+#cartleft > div:nth-child(1) > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 26px;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+    width:50%;
+}
+#cartleft > div:nth-child(1) > button{
+    margin-left: 110px;
+    margin-top: 16px;
+    height:60%;
+    width:30%;
+    font-weight: bold;
+    color:rgb(255,99,136);
+    border:3px solid rgb(255,99,136);
+    background-color: white;
+}
+#cartleft > div:nth-child(2){
+    height:200px;
+    width:100%;
+    border:1px solid rgb(192, 190, 190);
+}
+#cartleft > div:nth-child(2) > p{
+    font-size: 20px;
+    font-weight: bold;
+}
+#cartleft > div:nth-child(2)>p >i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+#cartleft > div:nth-child(2) > div:nth-child(1){
+    display:flex;
+    border:1px solid blue;
+}
+#cartleft > div:nth-child(2) > div:nth-child(2){
+    display: flex;
+    border:1px solid red;
+}
+#cartright {
+    width:35%;
+    height:100%;
+    border:1px solid black;
+}
