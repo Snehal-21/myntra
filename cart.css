@@ -5,8 +5,8 @@
 }
 #mainscreen{
     width:100%;
-    height:1200px;
-    border:1px solid red;
+    /* height:1200px; */
+    /* border:1px solid red; */
 }
 #navbar{
     width:100%;
@@ -88,16 +88,16 @@
 }
 #cartbody{
     width:60%;
-    border:1px solid red;
+    /* border:1px solid red; */
     margin: auto;
-    height:100%;
+    height:900px;
     display: flex;
     justify-content: space-between;
 }
 #cartleft{
     width:62.5%;
-    height:100%;
-    border:1px solid black;
+    height:90%;
+    /* border:1px solid black; */
     
 }
 #cartleft > div:nth-child(1){
@@ -106,7 +106,7 @@
     border:1px solid rgb(192, 190, 190);
     margin-top: 50px;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 #cartleft > div:nth-child(1) > p {
     font-size: 20px;
@@ -127,28 +127,435 @@
     background-color: white;
 }
 #cartleft > div:nth-child(2){
-    height:200px;
+    height:130px;
+    width:100%;
+    border:1px solid rgb(192, 190, 190);
+    margin-bottom: 15px;
+}
+#cartleft > div:nth-child(2) > p:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#cartleft > div:nth-child(2)>p:nth-child(1) >i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+#cartleft > div:nth-child(2)>p:nth-child(2){
+    font-size: 19px;
+    margin-top: 15px;
+    margin-left: 15px;
+    color:rgb(71, 69, 69);
+}
+#cartleft > div:nth-child(2) >div{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    color:red;
+}
+#cartleft > div:nth-child(2) >div > div:nth-child(2)>select{
+    border:none;
+    color:red;
+}
+#cartleft > div:nth-child(3){
+    height:60px;
     width:100%;
     border:1px solid rgb(192, 190, 190);
 }
-#cartleft > div:nth-child(2) > p{
+#cartleft > div:nth-child(3) > p{
+    margin-top: 15px;
+    margin-left: 15px;
     font-size: 20px;
+    color:rgb(71, 69, 69);
+}
+#cartleft > div:nth-child(3) > p >span{
     font-weight: bold;
 }
-#cartleft > div:nth-child(2)>p >i{
-    font-size: 25px;
+#cartleft > div:nth-child(4) {
+    display:flex;
+    height:100px;
+    width:100%;
+    /* border:1px solid black; */
+    margin-bottom: 15px;
+} 
+#cartleft > div:nth-child(4) >input{
+    height:25px;
+    width:25px;
+    margin-top: 35px;
+}
+#cartleft > div:nth-child(4) > P {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+#cartleft > div:nth-child(4) >input :checked{
+    background-color: rgb(255,99,136);
+    border: rgb(255,99,136);
+}
+#cartleft > div:nth-child(4) > button{
+    height:50px;
+    padding:20px;
+    background-color: white;
+}
+#cartleft > div:nth-child(4) > button:nth-child(3){
+    border:none;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(78, 76, 76);
+    margin-top: 20px;
+    margin-left: 205px;
+}
+#cartleft > div:nth-child(4) > div{
+    height:30px;
+    width:1px;
+    border-left:1px solid grey;
+    margin-top: 32px;
+}
+#cartleft > div:nth-child(4) > button:nth-child(5){
+   border:none;
+   font-size: 15px;
+   font-weight: bold;
+   color: rgb(78, 76, 76);
+   margin-top: 20px;
+}
+#cartleft > div:nth-child(5){
+    height:240px;
+    width:100%;
+    border:1px solid rgb(192, 190, 190);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+} 
+#cartleft > div:nth-child(5) >div:nth-child(1){
+    height:90%;
+    width:23%;
+    margin-top: 13px;
+    margin-left: 13px;
+    /* border:1px solid red; */
+}
+#cartleft > div:nth-child(5)> div:nth-child(1)>img{
+    height:100%;
+    width:100%;
+}
+#cartleft > div:nth-child(5) >div:nth-child(2){
+    width:65%;
+    height:90%;
+    /* border:1px solid red; */
+    margin-top: 13px;
+}
+#cartleft > div:nth-child(5) >div:nth-child(2) > h1{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+#cartleft > div:nth-child(5) >div:nth-child(2) > p:nth-child(2){
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+#cartleft > div:nth-child(5) >div:nth-child(2) > p:nth-child(3){
+    font-size: 16px;
+    margin-bottom: 5px;
+    color:rgb(63, 60, 60);
+}
+#cartleft > div:nth-child(5) >div:nth-child(2) > div >button{
+    height:28px;
+    width:90px;
+    border-radius: 5px;
+    border:none;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#cartleft > div:nth-child(5) >div:nth-child(2) > div >button:nth-child(1){
+    margin-right: 20px;
+}
+#cartleft > div:nth-child(5) >div:nth-child(2) >p:nth-child(5){
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#cartleft > div:nth-child(5) >div:nth-child(2) >p:nth-child(5) >del{
+    color:rgb(86, 81, 81);
+}
+#cartleft > div:nth-child(5) >div:nth-child(2) >p:nth-child(5) > span{
+    color:red;
+}
+#cartleft > div:nth-child(5) >div:nth-child(2) >p:nth-child(6){
+    font-size: 19px;
+}
+#cartleft > div:nth-child(5) >div:nth-child(2) >p:nth-child(6) >i{
+    margin-right: 10px;
+    border:1px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+#cartleft > div:nth-child(5) >div:nth-child(3){
+    width:5%;
+    height:90%;
+    /* border:1px solid red; */
+    margin-top: 10px;
+}
+#cartleft > div:nth-child(5) >div:nth-child(3)>i{
+    font-size: 35px;
+    margin-left: 10px;
+}
+#cartleft > div:nth-child(6){
+    height:70px;
+    width:100%;
+    border: 1px solid rgb(192, 190, 190);
+}
+#cartleft > div:nth-child(6) >p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+#cartleft > div:nth-child(6) >p>i{
     margin-right: 10px;
 }
-#cartleft > div:nth-child(2) > div:nth-child(1){
-    display:flex;
-    border:1px solid blue;
-}
-#cartleft > div:nth-child(2) > div:nth-child(2){
-    display: flex;
-    border:1px solid red;
+#cartleft > div:nth-child(6) >p >span{
+    margin-left: 480px;
+    font-size: 30px;
 }
 #cartright {
     width:35%;
+    height:90%;
+    border-left:1px solid rgb(192, 190, 190);
+    padding-left: 20px;
+}
+#cartright >div:nth-child(1){
+    height:90px;
+    width:100%;
+    /* border:1px solid red; */
+    border-bottom: 1px solid rgb(192, 190, 190);
+    margin-bottom: 30px;
+}
+#cartright >div:nth-child(1) > p{
+    margin-top: 20px;
+    font-weight: bold;
+    color:rgb(86, 84, 84);
+}
+#cartright >div:nth-child(1) > div {
+    display:flex;
+}
+#cartright >div:nth-child(1) > div >p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    /* border:1px solid red; */
+}
+#cartright >div:nth-child(1) > div>p >i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+#cartright >div:nth-child(1) > div >button{
+    height:45px;
+    width:100px;
+    margin-left: 130px;
+     font-weight: bold;
+    color:rgb(255,99,136);
+    border:3px solid rgb(255,99,136);
+    background-color: white;
+}
+#cartright >div:nth-child(2){
+    height:210px;
+    width:100%;
+    /* border:1px solid red; */
+    border-bottom: 1px solid rgb(192, 190, 190);
+    margin-bottom: 30px;
+}
+#cartright >div:nth-child(2) > p{
+    margin-top: 20px;
+    font-weight: bold;
+    color:rgb(86, 84, 84);
+}
+#cartright >div:nth-child(2) >div{
+    display: flex;
+    justify-content: space-between;
+    height:150px;
+    /* border:1px solid red; */
+    margin-top: 15px;
+    background-color: rgb(255,241,236);
+    border-radius: 10px;
+}
+#cartright >div:nth-child(2) >div > div:nth-child(1){
+    width:20%;
     height:100%;
-    border:1px solid black;
+}
+#cartright >div:nth-child(2) >div > div:nth-child(1)>img{
+    width:100%;
+    height:100%;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#cartright >div:nth-child(2) >div > div:nth-child(2){
+    width:74%;
+    height:100%;
+}
+#cartright >div:nth-child(2) >div > div:nth-child(2) >p:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#cartright >div:nth-child(2) >div > div:nth-child(2) > p:nth-child(2){
+    font-size: 18px;
+    color:grey;
+    /* margin-top: 10px; */
+}
+#cartright >div:nth-child(2) >div > div:nth-child(2) > p:nth-child(2) >span{
+    color:black;
+}
+#cartright >div:nth-child(2) >div > div:nth-child(2) > p:nth-child(3){
+    font-size: 18px;
+   font-weight: bold;
+   margin-top: 20px;
+   color:rgb(255,99,136);
+}
+#cartright > div:nth-child(3){
+    height:200px;
+    width: 100%;
+    border-bottom:1px solid rgb(192, 190, 190);
+    margin-bottom: 30px;
+}
+#cartright > div:nth-child(3) >p{
+    margin-top: 20px;
+    font-weight: bold;
+    color:rgb(54, 53, 53);
+    margin-bottom: 15px;
+}
+#cartright > div:nth-child(3) >p >span{
+    font-size:14px ;
+}
+#cartright > div:nth-child(3) >div{
+    display: flex;
+}
+#cartright > div:nth-child(3) >div >div:nth-child(1){
+    width:60%;
+}
+#cartright > div:nth-child(3) >div >div:nth-child(2){
+    text-align: right;
+    /* border:1px solid blue; */
+    width:40%;
+}
+#cartright > div:nth-child(3) >div >div>p{
+    margin-bottom: 12px;
+    font-size: 19px;
+    color:rgb(99, 97, 97);
+}
+#cartright > div:nth-child(3) >div >div>p:nth-child(4)>span{
+    color:rgb(255,99,136);
+    font-weight: bold;
+    margin-left: 10px;
+}
+#cartright > div:nth-child(3) >div >div:nth-child(2) >p:nth-child(1){
+    color:black;
+}
+#cartright > div:nth-child(3) >div >div:nth-child(2) >p:nth-child(2){
+    color:rgb(115,173,157);
+}
+#cartright > div:nth-child(3) >div >div:nth-child(2) >p:nth-child(3){
+    color:rgb(255,99,136);
+}
+#cartright > div:nth-child(3) >div >div:nth-child(2) >p:nth-child(4){
+    color:rgb(115,173,157);
+}
+#cartright > div:nth-child(3) >div >div:nth-child(2) >p:nth-child(4)>del{
+    color:black;
+}
+#cartright > div:nth-child(4) {
+    height:40px;
+    width:100%;
+    /* border:1px solid red; */
+    display: flex;
+}
+#cartright > div:nth-child(4) >div{
+    width:50%;
+}
+#cartright > div:nth-child(4) >div >p{
+    font-size: 20px;
+    font-weight: bold;
+}
+#cartright > div:nth-child(4) >div:nth-child(2){
+    text-align: right;
+}
+#cartright > button{
+    width:100%;
+    height:50px;
+    font-weight: bold;
+    background-color:rgb(255,99,136) ;
+    color:white;
+    border:none;
+    font-size: 18px;
+}
+#cartimages{
+    /* height:500px; */
+    width:60%;
+    margin: auto;
+    /* border:1px solid blue; */
+    background-color: rgb(255,245,247);
+    padding: 10px;
+}
+#cartimages >hr{
+    margin-top: 10px;
+    color: black;
+}
+#cartimages >p {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+#cartimages >div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#cartimages >div >div{
+    height:480px;
+    width:19%;
+    /* border:1px solid red; */
+    margin-bottom: 20px;
+    /* padding: 10px; */
+    background-color: white;
+}
+#cartimages >div >div>img{
+    width: 100%;
+    height:320px
+}
+#cartimages >div >div>div{
+    border-bottom:1px solid rgb(188, 185, 185);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#cartimages >div >div>div>h1 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+#cartimages >div >div>div>p:nth-child(2){
+    color:grey;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#cartimages >div >div>div>p:nth-child(3){
+    margin-bottom: 10px;
+}
+#cartimages >div >div>div>p:nth-child(3)>span:nth-child(1){
+    font-size: 16.5px;
+    font-weight: bold;
+}
+#cartimages >div >div>div>p:nth-child(3) >span:nth-child(2){
+    color:grey;
+}
+#cartimages >div >div>div>p:nth-child(3) >span:nth-child(3){
+    color:red;
+}
+#cartimages >div >div >p{
+    text-align: center;
+    margin-top: 18px;
+    font-weight: bold;
+    color:rgb(255,96,120);
+    font-size: 18px;
 }
