@@ -126,6 +126,9 @@
     border:3px solid rgb(255,99,136);
     background-color: white;
 }
+#cartleft > div:nth-child(1) > button:hover{
+    background-color:rgb(255,241,236) ;
+}
 #cartleft > div:nth-child(2){
     height:130px;
     width:100%;
@@ -313,6 +316,9 @@
     margin-left: 10px;
     margin-top: 15px;
 }
+#cartleft > div:nth-child(6) >p:hover{
+    text-decoration: underline;
+}
 #cartleft > div:nth-child(6) >p>i{
     margin-right: 10px;
 }
@@ -359,6 +365,9 @@
     color:rgb(255,99,136);
     border:3px solid rgb(255,99,136);
     background-color: white;
+}
+#cartright >div:nth-child(1) > div >button:hover{
+    background-color:rgb(255,241,236) ;
 }
 #cartright >div:nth-child(2){
     height:210px;
