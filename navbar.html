@@ -28,7 +28,7 @@
         </div>
         <div id="screen-tags">
             <div><h3>MEN</h3></div>
-            <div><h3>WOMEN</h3></div>
+            <div style="cursor: pointer;"; onclick="window.location.href=`./product.html`"><h3>WOMEN</h3></div>
             <div><h3>KIDS</h3></div>
             <div><h3>HOME & LIVING</h3></div>
             <div><h3>BEAUTY</h3></div>
@@ -41,11 +41,11 @@
         </form>
         </div>
         <div id="screen-right-tags">
-            <div>
+            <div id="switch">
                 <i class="fa-regular fa-user "></i>
                 <h5>Profile</h5>
             </div>
-            <div>
+            <div id="logout">
                 <i class="fa-regular fa-heart "></i>
                 <h5 >Wishlist</h5>
             </div>
@@ -618,5 +618,28 @@
         <div><i class="fa-regular fa-bell"></i></div>
     </div>
 </div>
+<script>
+    window.onload=function(){
+        var loginuser=JSON.parse(localStorage.getItem("mlogin"));
+        var flag=false;
+        if(loginuser){
+            var div=document.getElementById("switch");
+            var logout=document.getElementById("logout");
+
+            var name=`<h4>${loginuser.uname}</h4>`;
+            var button=`<button onclick="logout()">Logout</button>`;
+            div.innerHTML=name;
+            logout.innerHTML=button;
+        }
+        else{
+            alert("current user absent");
+        }
+    }
+    function logout(){
+        alert("logout successful.");
+        localStorage.removeItem("mlogin");
+        window.location.reload();
+    }
+</script>
 </body>
 </html>

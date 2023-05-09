@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addmyntra</title>
+</head>
+<body>
+    <form onsubmit="addmyntra(event)">
+        <label>product image</label></br>
+        <input type="text" id="turl"/></br>
+        <label>product Name</label></br>
+        <input type="text" id="tname"/></br>
+        <label>product Price</label></br>
+        <input type="number" id="tprice"/></br>
+        <input type="submit" value="Add product"/>
+
+    </form>
+    <script>
+        function addmyntra(event){
+            event.preventDefault();
+
+            var url=document.getElementById("turl").value;
+            var name=document.getElementById("tname").value;
+            var price=document.getElementById("tprice").value;
+            var finaldata={url,name,price};
+            
+            var myntrals=JSON.parse(localStorage.getItem("myntraadd-product")) || [];
+            myntrals.push(finaldata);
+            localStorage.setItem("myntraadd-product",JSON.stringify(myntrals));
+            alert("jwellery added successfully");
+
+            
+        }
+    </script>
+</body>
+</html>

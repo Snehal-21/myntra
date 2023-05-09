@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #screen{
+        width:100%;
+        height:750px;
+        border:1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(253,238,236);
+    }
+    #body{
+        width:30%;
+        height:80%;
+        /* border:1px solid blue; */
+        box-shadow: 8px 10px 18px grey;
+    }
+    #image{
+        width:100%;
+        height:30%;
+    }
+    #image>img{
+        width:100%;
+        height:100%;
+    }
+    #signup{
+        height:70%;
+        width:100%;
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    #signup>h2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #signup>form>input{
+        width:100%;
+        height:40px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    #signup>form>input:nth-child(5){
+        background-color: rgb(255,63,108);
+        color: white;
+        font-size: 20px;
+        border: none;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div id="screen">
+        <div id="body">
+            <div id="image">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/2/7/9d70554f-0a7d-49f1-a063-4c32800a9bfd1675792560640-offer-banner-400-600x240-code-_-MYNTRA300.jpg" alt="image"/>
+            </div>
+            <div id="signup">
+                <h2>Signup</h2>
+                <form onsubmit="signup(event)">
+                    <input type="text" id="mname" placeholder="Enter Name.."/>
+                    <input type="email" id="memail" placeholder="Enter Email.."/>
+                    <input type="password" id="mpass" placeholder="Enter Password.."/>
+                    <input type="password" id="mconfirmpass" placeholder="Enter Confirm Password.."/>
+                    <input  type="submit" value="Sign Up" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./server.js"></script>
+</body>
+</html>

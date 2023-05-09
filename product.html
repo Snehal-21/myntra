@@ -122,7 +122,8 @@
                     <p><input type="radio" />80% and above</p>
                 </div>
             </div>
-            <div id="product-body-info">
+            <div id="products"></div>
+            <!-- <div  id="product-body-info">
                 <div id="product-body-main-info">
                     <div>
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1700871/2020/1/22/f932ae44-0fb8-4b92-b7bc-f1756253294b1579692118186-HRX-by-Hrithik-Roshan-Men-Teal-Blue-Printed-T-shirt-90515796-1.jpg" alt="prod-img"/>
@@ -365,7 +366,7 @@
                         <p><b>Rs.279&nbsp;</b><del>Rs.699</del><span>&nbsp;&nbsp;(60% OFF)</span></p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
             <div id="page">
                 <div><p>Page 1 of 1592</p></div>
@@ -473,5 +474,16 @@
 
 
     </div>
+    <script>
+        window.onload=function(){
+            var div=document.getElementById("products");
+            var finaldata="";
+            var lsmyntra=JSON.parse(localStorage.getItem("myntraadd-product"));
+            for(var i=0;i<lsmyntra.length;i++){
+                finaldata+=`<div id="singleproduct"><img src=${lsmyntra[i].url} /><h4>${lsmyntra[i].name}</h4><p>${lsmyntra[i].price}</p></div>`;
+            }
+           div.innerHTML=finaldata;
+        }
+    </script>
 </body>
 </html>
