@@ -480,9 +480,16 @@
             var finaldata="";
             var lsmyntra=JSON.parse(localStorage.getItem("myntraadd-product"));
             for(var i=0;i<lsmyntra.length;i++){
-                finaldata+=`<div id="singleproduct"><img src=${lsmyntra[i].url} /><h4>${lsmyntra[i].name}</h4><p>${lsmyntra[i].price}</p></div>`;
+                finaldata+=`<div onClick ='redirect(${JSON.stringify(lsmyntra[i])})' id="singleproduct"><img src=${lsmyntra[i].url} /><h4>${lsmyntra[i].name}</h4><p>${lsmyntra[i].price}</p></div>`;
             }
            div.innerHTML=finaldata;
+        }
+        function redirect(product){
+            var singleproduct=JSON.stringify(product);
+            // console.log(singlejwell);
+            // alert("working");
+            localStorage.setItem("curreent-myntra-product",singleproduct);
+            window.location.href='./men-clothing.html';
         }
     </script>
 </body>

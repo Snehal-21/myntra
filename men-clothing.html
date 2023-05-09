@@ -45,7 +45,7 @@
             </div>
         </div>
        <div id="product-main-heading">
-        <p>Home / Clothing / Men Clothing / Tshirts / <b>Minions By Kook N Keech Tshirts > More By Minions By Kook N Keech</b></p>
+        <p>Home / Clothing / Men Clothing / Tshirts / <b id="name">Minions By Kook N Keech Tshirts > More By Minions By Kook N Keech</b></p>
        </div>
         <div id="productmain">
             <div id="product-img">
@@ -57,14 +57,14 @@
             </div>
            <div id="product-info">
            <div>
-            <h1>Minions by Kook N Keech</h1>
+            <h1 id="name">Minions by Kook N Keech</h1>
             <p>Men Purple Boxy Fit Printed Round Neck Pure Cotton T-shirt</p>
             <div><p><b>4.2 <i class="fa-solid fa-star"></i></b>| 2.8k Ratings</p></div>
            </div>
 
 
            <div>
-            <p><span>₹571  </span><span>MRP <del>₹1099</del></span> <span>  (48% OFF)</span></p>
+            <p><span id="price">₹571  </span><span>MRP <del>₹1099</del></span> <span>  (48% OFF)</span></p>
             <p>inclusive of all taxes</p>
             <p><span>SELECT SIZE</span><span>SIZE CHART&nbsp;&nbsp;&nbsp;></span></p>
             <div>
@@ -185,4 +185,18 @@
         </div>
     </div>
 </body>
+<script>
+    window.onload=function(){
+        var myntra_product=JSON.parse(localStorage.getItem("curreent-myntra-product"))
+        var divforimage=document.getElementById("product-img");
+        var divforname=document.getElementById("name");
+        var divforprice=document.getElementById("price");
+        var name=`${ myntra_product.name}`;
+        var price=`${myntra_product.price}`;
+        var image=`<div><img src="${myntra_product.url}" /></div><div><img src="${myntra_product.url}" /></div> <div><img src="${myntra_product.url}" /></div><div><img src="${myntra_product.url}" /></div><div><img src="${myntra_product.url}" /></div>`;
+        divforname.innerHTML=name;
+        divforprice.innerHTML=price;
+        divforimage.innerHTML=image;
+        }
+</script>
 </html>
