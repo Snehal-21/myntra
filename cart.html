@@ -52,7 +52,7 @@
                     <div></div>
                     <button>MOVE TO WHISHLIST</button>
                 </div>
-                <div>
+                <div id="cartbody">
                     <div>
                         <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7546900/2019/1/24/c9be0d6e-30a4-4242-b4e0-1c166b73f2781548320874402-HERENOW-Men-Polo-Collar-T-shirt-4861548320873235-1.jpg" alt="cart-image"/>
                     </div>
@@ -219,5 +219,36 @@
             </div>
         </div>
     </div>
+    <script>
+         window.onload=function(){
+            var currentuser=JSON.parse(localStorage.getItem("mlogin"));
+            var userdata=JSON.parse(localStorage.getItem("myntrauserdata"));
+            var divtoappend=document.getElementById("cartbody");
+            var products;
+            for(var i=0;i<userdata.length;i++){
+                if(currentuser.uemail == userdata[i].uemail){
+                    products=userdata[i].cartproducts;
+                }
+            }
+            var finalcart="";
+            // console.log(userdata);
+            for(var i=0;i<products.length;i++){
+                finalcart+=`<div><img src="${products[i].url}" /></div>
+                <div><h1>${products[i].name}</h1>
+                <p>HERENOW Men Navy Polo Collar Cotton Pure Cotton T-shirt</p>
+                <p>Sold by:Omnitech Retail</p>
+                <div>
+                <button>Size:M<i class="fa-solid fa-caret-down"></i></button>
+                <button>Qty:1<i class="fa-solid fa-caret-down"></i></button>
+                </div>
+                <p>Rs${products[i].price} <del>Rs.1299</del><span> 40%OFF</span></p>
+                <p></p>
+                </div>
+                <div><i class="fa-solid fa-xmark"></i></div>
+                </div>`;
+            }
+            divtoappend.innerHTML=finalcart;
+        }
+    </script>
 </body>
 </html>

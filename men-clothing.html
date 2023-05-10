@@ -74,7 +74,7 @@
                 <div><p>XL</p></div>
                 <div><p>XXL</p></div>
             </div>
-            <div>
+            <div id="cart">
                 <button><i class="fa-solid fa-bag-shopping"></i>ADD TO BAG</button>
                 <button><i class="fa-regular fa-heart"></i>WHISLIST</button>
             </div>
@@ -191,12 +191,35 @@
         var divforimage=document.getElementById("product-img");
         var divforname=document.getElementById("name");
         var divforprice=document.getElementById("price");
+        var divcart=document.getElementById("cart");
         var name=`${ myntra_product.name}`;
         var price=`${myntra_product.price}`;
+        var cart=`<button onclick='addcart(${JSON.stringify(myntra_product)})'><i class="fa-solid fa-bag-shopping"></i>ADD TO BAG</button>`;
         var image=`<div><img src="${myntra_product.url}" /></div><div><img src="${myntra_product.url}" /></div> <div><img src="${myntra_product.url}" /></div><div><img src="${myntra_product.url}" /></div><div><img src="${myntra_product.url}" /></div>`;
         divforname.innerHTML=name;
         divforprice.innerHTML=price;
         divforimage.innerHTML=image;
+        divcart.innerHTML=cart;
         }
+        function addcart(product){
+            var currentuser=JSON.parse(localStorage.getItem("mlogin"));
+            // console.log(currentuser.uemail);
+            var userdata=JSON.parse(localStorage.getItem("myntrausers"));
+            for(var i=0;i<userdata.length;i++){
+                if(currentuser.uemail==userdata[i].uemail){
+                    alert("got")
+                   if(userdata[i].cartproducts === undefined){
+                    userdata[i].cartproducts=[product];
+                   }
+                else{
+                    userdata[i].cartproducts.push(product);
+                }
+                alert("product added to the cart");
+                window.location.href='./cart.html';
+            }
+           
+        }
+        localStorage.setItem("myntrauserdata",JSON.stringify(userdata));
+    }
 </script>
 </html>
