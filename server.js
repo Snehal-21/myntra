@@ -46,6 +46,7 @@ function signup(event){
 }
 
 function login(event){
+    alert("working");
     event.preventDefault();
 
     var email=document.getElementById("lemail").value;
@@ -55,15 +56,23 @@ function login(event){
     if(email && pass){
         var marray=JSON.parse(localStorage.getItem("myntrausers"));
         var flaglogin=false;
+        console.log(marray);
+        
         for(var i=0;i<marray.length;i++){
-            if(marray[i].uemail==email){
+            console.log(marray[i]);
+            
+            if(marray[i].uemail===email || marray[i].upassword===pass){
                 flaglogin=true;
                 myntralogin=marray[i];
+                console.log(myntralogin,"njknj");
+                
             }
         }
         if(flaglogin==true){
             localStorage.setItem("mlogin",JSON.stringify(myntralogin));
             alert("log in successfully");
+            document.getElementById("lemail").value='';
+            document.getElementById("lpass").value='';
             window.location.href="./navbar.html";
         }
     }
