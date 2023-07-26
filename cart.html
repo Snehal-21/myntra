@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div id="cartbody">
+        <!-- <div id="cartbody">
             <div id="cartleft">
                 <div>
                     <p>Check delivery time & services</p>
@@ -120,6 +120,30 @@
                 <button>PLACE ORDER</button>
 
             </div>
+        </div> -->
+        <div class="cartSection">
+            <div class="leftCart">
+                <div class="innerCart">
+                    <div class="prodImage">
+                        <div class="prodImagePos">
+                            <img src="" alt="" />
+                        </div>
+                    </div>
+                    <div class="prodDesc">
+                        <h1>HERE&NOW</h1>
+                        <p>HERENOW Men Navy Polo Collar Cotton Pure Cotton T-shirt</p>
+                        <p>Sold by:Omnitech Retail</p>
+                        <div>
+                            <button>Size:M<i class="fa-solid fa-caret-down"></i></button>
+                            <button>Qty:1<i class="fa-solid fa-caret-down"></i></button>
+                        </div>
+                        <p>Rs 779 <del>Rs.1299</del><span> 40%OFF</span></p>
+                        <p><i class="fa-solid fa-rotate-left"></i><b>14 days</b> Return available</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightCart"></div>
         </div>
 
         <div id="cartimages">
@@ -219,10 +243,10 @@
             </div>
         </div>
     </div>
-    <script>
+    <!-- <script>
          window.onload=function(){
             var currentuser=JSON.parse(localStorage.getItem("mlogin"));
-            var userdata=JSON.parse(localStorage.getItem("myntrauserdata"));
+            var userdata=JSON.parse(localStorage.getItem("myntrausers"));
             var divtoappend=document.getElementById("cartbody");
             var products;
             for(var i=0;i<userdata.length;i++){
@@ -232,6 +256,8 @@
             }
             var finalcart="";
             // console.log(userdata);
+            console.log(products);
+            
             for(var i=0;i<products.length;i++){
                 finalcart+=`<div><img src="${products[i].url}" /></div>
                 <div><h1>${products[i].name}</h1>
@@ -249,6 +275,6 @@
             }
             divtoappend.innerHTML=finalcart;
         }
-    </script>
+    </script> -->
 </body>
 </html>

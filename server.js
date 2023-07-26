@@ -46,7 +46,7 @@ function signup(event){
 }
 
 function login(event){
-    alert("working");
+    // alert("working");
     event.preventDefault();
 
     var email=document.getElementById("lemail").value;
@@ -70,10 +70,10 @@ function login(event){
         }
         if(flaglogin==true){
             localStorage.setItem("mlogin",JSON.stringify(myntralogin));
-            alert("log in successfully");
+            // alert("log in successfully");
             document.getElementById("lemail").value='';
             document.getElementById("lpass").value='';
-            window.location.href="./navbar.html";
+            window.location.href="./home.html";
         }
     }
     else{
